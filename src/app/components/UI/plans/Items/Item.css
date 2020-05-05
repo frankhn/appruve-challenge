@@ -1,9 +1,9 @@
 .item {
-    background: #548e60;
     border-radius: 5px;
     padding: 1px 11px;
-    font-size: 17px;
+    font-size: 12px;
+    text-align: center;
     font-family: sans-serif;
-    color: #fff;
+    color: #404440;
     margin: 5px 0;
 }

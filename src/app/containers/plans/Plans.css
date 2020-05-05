@@ -1,5 +1,20 @@
-.plans-wrapper {
+.wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin: 5rem 0;
+}
+
+.wrapper section:nth-child(2) {
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-top-right-radius: 1rem;
+}
+
+.wrapper section:nth-child(2) .Name {
+    border-top-right-radius: 1rem;
+}
+
+.wrapper section:last-child .Name {
+    border-top-left-radius: 0;
+    border-top-right-radius: 1rem;
 }

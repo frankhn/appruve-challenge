@@ -2,9 +2,11 @@ import React from 'react'
 import './Card.css'
 import Item from './Items/Item'
 
-const Card = (props) => (
-  <div class="card">
-    <div class="Name">{props.name}</div>
+const Card = (props) => {
+  
+  return (
+  <section class="card">
+    <div class={`Name plan-${props.name}`}>{props.name}</div>
     <div class="Price">
       <div class='currency'>
         $
@@ -17,14 +19,12 @@ const Card = (props) => (
       </p>
     </div>
     <div class="items">
-      <Item />
-      <Item />
-      <Item />
-      <Item />
+      <Item items={props.items}/>
     </div>
     <div class={`purchase purchase-${props.name}`}>
       Purchase
     </div>
-  </div>
-)
+  </section>
+  )
+}
 export default Card

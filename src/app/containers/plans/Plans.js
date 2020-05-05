@@ -33,15 +33,21 @@ class Plans extends Component {
             description={plan.description}
             price={plan.price} 
             items={plan.items}
-            key={i}/>
+            key={i}
+            clicked={() => this.onPurchase(plan.name)}/>
         )))
         return cards
     }
+
+    onPurchase = (name) => {
+        alert("Thanks for purchasing " + name + " plan")
+    }
+
+
     render() {
-        const result = this.mapPlans()
         return (
             <div class="wrapper">
-                {result}
+                {this.mapPlans()}
             </div>
         )
     }

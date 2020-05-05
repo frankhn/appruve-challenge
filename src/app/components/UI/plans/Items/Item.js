@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Item = (props) => (
-    <div>bra bra</div>
+    <div class="item">life time access</div>
 )
 
 export default Item

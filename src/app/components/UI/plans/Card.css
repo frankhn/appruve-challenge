@@ -1,0 +1,68 @@
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    flex: 2 1 auto;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .Name {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 1rem 0;
+  }
+
+  .Price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .buying-price {
+    font-size: 30px;
+  }
+
+  .Points {
+      font-size: 16px;
+  }
+
+  .description {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1rem;
+  }
+
+  .items::before{
+    content: "";
+  }
+
+  .purchase {
+    background: blue;
+    border-radius: 5px;
+    position: relative;
+    margin: 2rem 0 0;
+    width: fit-content;
+    align-self: center;
+    padding: .2rem 1rem;
+    cursor: pointer;
+  }
+
+  .purchase-Blonze {
+    background-color: rgba(211, 211, 11, 0.698)
+  }
+
+  .purchase-Silver {
+    background-color: green;
+  }
+
+  .purchase-Gold {
+    background-color: rgb(2, 34, 3);
+  }
